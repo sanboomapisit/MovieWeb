@@ -1,0 +1,73 @@
+
+  input[type="text"] {
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+
+  input[type="password"] {
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+
+  input[type="text"]:focus {
+    border-color: red;
+    box-shadow: 0 0 8px 0 red;
+  }
+
+  input[type="password"]:focus {
+    border-color: red;
+    box-shadow: 0 0 8px 0 red;
+  }
+
+  .inputWithIcon input[type="text"] {
+    padding-left: 40px;
+  }
+
+  .inputWithIcon input[type="password"] {
+    padding-left: 40px;
+  }
+
+  .inputWithIcon {
+    position: relative;
+  }
+
+  .inputWithIcon i {
+    position: absolute;
+    left: 8px;
+    top: 0px;
+    padding: 9px 8px;
+    color: #000;
+    transition: 0.3s;
+  }
+
+  .inputWithIcon input[type="text"]:focus+i {
+    color: red;
+  }
+
+  .inputWithIcon input[type="password"]:focus+i {
+    color: red;
+  }
+
+  .inputWithIcon.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 9px 4px;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .inputWithIcon.inputIconBg input[type="text"]:focus+i {
+    color: #fff;
+    background-color: dodgerBlue;
+  }
